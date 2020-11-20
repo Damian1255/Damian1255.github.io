@@ -1,1 +1,45 @@
-<h1>test</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Chatbot Demo - Login</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>  
+    $(document).ready(function () {  
+        var err = GetParameterValues('error');  
+        $("#result").html(err);  
+        function GetParameterValues(param) {  
+            var url = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');  
+            for (var i = 0; i < url.length; i++) {  
+                var urlparam = url[i].split('=');  
+                if (urlparam[0] == param) {  
+                    return urldecode(urlparam[1]);  
+                }  
+            }  
+        }  
+        function urldecode(str) {
+            return decodeURIComponent((str+'').replace(/\+/g, '%20'));
+        }
+    });  
+    </script>
+</head>
+<body>
+   <div class="header">
+        <h1 style="padding-left: 70px;text-align:left;float:left;">Welcome to Hotel West - Login</h1>
+        <h2 style="padding-right: 70px;text-align:right;float:right;">
+              <a class="login_out" href="home.html">Home</a>
+        </h2>
+        <hr style="clear:both;"/>     
+    </div>
+    <div class="login-box">
+        <h2>Login</h2>
+        <form method="post" action="chkLogin.php">
+            <p>Username: <input type="text" id="txtUsername" name="txtUsername" required></p>
+            <p>Password: <input type="password" id="txtPwd" name="txtPwd" required></p>
+            <p><button type="submit" style="float:right; margin-right:12px;">Login</button></p>
+            <p><span id='result'></span></p>
+        </form>
+    </div>
+</body>
+</html>
