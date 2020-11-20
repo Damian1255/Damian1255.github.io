@@ -1,2 +1,67 @@
-/* CSS Document */
+html body{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 80%;
+    font-family: sans-serif;
+}
+
+.header{
+    height:12vh;
+    background-color:darkred;
+    color: ghostwhite;
+}
+
+a.header_menu{
+    /*text-align: right;*/
+    color: ghostwhite;
+    text-decoration: underline;
+}
+
+.admin_menu{
+	margin: 70px;
+}
+
+.grid-container {
+	padding-bottom: 50px;
+  	display: grid;
+  	grid-template-columns: 800px;
+  	grid-template-rows: auto auto auto auto;
+  	gap: 0px 0px;
+  	grid-template-areas: "Title" "item_1" "item_2" "item_3";
+}
+.Title {
+	grid-area: Title;
+	padding: 8px;
+	font-size: 15px;
+	background-color: darkred;
+	color:white;
+}
+.item_1 {
+	grid-area: item_1;
+	padding: 8px;
+	font-size: 15px;
+	background-color: gainsboro;
+	color:black;
+}
+.item_2 {
+	grid-area: item_2;
+	padding: 8px;
+	font-size: 15px;
+	background-color: whitesmoke;
+	color:black;
+}
+.item_3 {
+	grid-area: item_3;
+	padding: 8px;
+	font-size: 15px;
+	background-color: gainsboro;
+	color:black;
+}
+
+.grid-container a{
+	float: right;
+	padding-left: 500px;
+	text-decoration: none;
+}
 
