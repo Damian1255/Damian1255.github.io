@@ -13,23 +13,24 @@ html body{
 }
 
 a.header_menu{
-    /*text-align: right;*/
     color: ghostwhite;
     text-decoration: underline;
 }
 
-.admin_menu{
-	margin: 70px;
-}
-
-.grid-container {
+.menu-grid-container {
 	padding-bottom: 50px;
   	display: grid;
-  	grid-template-columns: 800px;
+  	grid-template-columns: 50%;
   	grid-template-rows: auto auto auto auto;
   	gap: 0px 0px;
   	grid-template-areas: "Title" "item_1" "item_2" "item_3";
 }
+
+.menu-grid-container a{
+	float: right;
+	text-decoration: none;
+}
+
 .Title {
 	grid-area: Title;
 	padding: 8px;
@@ -59,9 +60,32 @@ a.header_menu{
 	color:black;
 }
 
-.grid-container a{
-	float: right;
-	padding-left: 500px;
-	text-decoration: none;
+.side_menu {
+	padding-bottom: 30px !important;
+	grid-template-columns: 100%;
+	width: 100%;
+}
+
+.active {
+	background-color: #F4F89F;
+}
+
+.main-grid-container {
+ 	display: grid;
+  	grid-template-columns: 25% 75%;
+  	grid-template-rows: auto;
+  	gap: 0px 0px;
+  	grid-template-areas:
+    "Menu Content";
+	padding-top: 100px;
+}
+
+.Menu {
+	grid-area: Menu;
+}
+
+.Content {
+	grid-area: Content;
+	padding-left: 50px;
 }
 
