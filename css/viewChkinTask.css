@@ -1,0 +1,104 @@
+.record-grid-container {
+  display: grid;
+  grid-template-columns: 20% 40%;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    "greet greet"
+    "greeting greeting_text"
+	"registration registration"
+	"registration_card registration_card_text"
+	"registration_verify registration_verify_text";
+}
+.greet { 
+	grid-area: greet;
+	margin-top: 10px;
+	font-size: 1.2em;
+	color: white;
+	padding: 10px;
+	background-color: darkred;
+}
+.greeting { 
+	grid-area: greeting;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 20px 0;
+}
+.registration { 
+	grid-area: registration;
+	margin-top: 10px;
+	font-size: 1.2em;
+	color: white;
+	padding: 10px;
+	background-color: darkred;
+}
+.registration_card { 
+	grid-area: registration_card;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 20px 0;
+}
+.registration_verify { 
+	grid-area: registration_verify;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 20px 0;
+}
+.greeting_text { 
+	grid-area: greeting_text;
+	padding: 10px 0;
+}
+.registration_card_text { 
+	grid-area: registration_card_text;
+	padding: 10px 0;
+}
+.registration_verify_text { 
+	grid-area: registration_verify_text;
+	padding: 10px 0;
+}
+
+.regcard_subtask-grid-container {
+  	display: grid;
+ 	grid-template-columns: 50% 40%;
+  	grid-template-rows: auto auto;
+  	gap: 0px 0px;
+	margin-top: 20px;
+  	grid-template-areas:
+    	"requestPassport requestPassport_text"
+		"locateReservation locateReservation_text";
+}
+.requestPassport { 
+	grid-area: requestPassport;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 20px 0;
+}
+.requestPassport_text { 
+	grid-area: requestPassport_text;
+	padding: 10px 0;
+}
+.locateReservation { 
+	grid-area: locateReservation;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 20px 0;
+}
+.locateReservation_text { 
+	grid-area: locateReservation_text;
+	padding: 10px 0;
+}
+.submit input {
+	padding: 10px;
+	margin: 5px;
+	border-radius: 5px;
+	outline: none;
+	border-style: solid;
+	border-color: white;
+	color: white;
+	background-color: steelblue;
+	transition: border-color 0.5s;
+}
+
+.submit input:hover {
+	border-color: black;
+}

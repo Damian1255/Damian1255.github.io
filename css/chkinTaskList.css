@@ -1,0 +1,47 @@
+.table {
+	margin-top: 30px;
+}
+input {
+	padding: 8px;
+	margin-right: 10px;
+	border-radius: 5px;
+	outline: none;
+	border-color: white;
+	border-style: solid;
+	transition: border-color 0.5s;
+}
+
+input:hover{
+	border-color: black;
+}
+select {
+	padding: 8px;
+	margin-right: 10px;
+	border-radius: 5px;
+	outline: none;
+	background-color: whitesmoke;
+	width: 40%;
+	border-color: gainsboro;
+	border-style: solid;
+	transition: border-color 0.5s;
+}
+select:hover{
+	border-color: black;
+}
+table{
+	width: 70%;
+	margin-top: 10px;
+}
+table , td, th {
+	border-collapse: collapse;
+	padding: 10px
+}
+table tr:nth-child(odd) {
+	background-color: gainsboro;
+}
+.table-checkbox {
+	width: 5%;	
+}
+.table-date {
+	font-weight: bold;
+}
